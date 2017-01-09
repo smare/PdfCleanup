@@ -1,0 +1,23 @@
+target/
+.classpath
+.project
+.settings/
+.myumldata
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+.loadpath
+.recommenders
+
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
