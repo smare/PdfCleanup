@@ -6,7 +6,7 @@
 - Title
 - Subject
 - Keywords
-The application then writes the values to the PDF's metadata fields.
+  The application then writes the values to the PDF's metadata fields.
 
 ## Getting Started
-  **PdfCleanup** is a Spring Batch application configured with Spring Boot, utilizing iText for manipulating PDF files.  It uses Maven to manage dependencies, build, test and deployment.
+  **PdfCleanup** is a Spring Batch application configured with Spring Boot, utilizing iText for manipulating PDF files.  It uses Maven to manage dependencies, build, test, and deployment.

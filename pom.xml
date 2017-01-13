@@ -3,20 +3,20 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<!-- Your own application should inherit from spring-boot-starter-parent -->
+		<!-- This application inherits from spring-boot-starter-parent -->
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.0.2.RELEASE</version>
 	</parent>
 	<artifactId>PdfCleanupSpringBoot</artifactId>
 	<groupId>com.smare</groupId>
-	<name>Spring Boot Batch Sample</name>
-	<description>Spring Boot Batch Sample</description>
+	<name>PdfCleanupSpringBoot</name>
+	<description>Spring Boot Batch application to update PDF metadata using Amazon Product API information</description>
 	<version>0.0.1-SNAPSHOT</version>
-	<url>http://projects.spring.io/spring-boot/</url>
+	<url>https://github.com/smare/PdfCleanup</url>
 	<organization>
-		<name>Pivotal Software, Inc.</name>
-		<url>http://www.spring.io</url>
+		<name>MetaReflection</name>
+		<url>http://www.metareflection.com</url>
 	</organization>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
@@ -31,6 +31,10 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>		
 		<dependency>
 			<groupId>com.itextpdf</groupId>
 			<artifactId>forms</artifactId>
