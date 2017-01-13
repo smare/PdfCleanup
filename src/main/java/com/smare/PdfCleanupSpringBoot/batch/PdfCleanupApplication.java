@@ -31,6 +31,8 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Configuration
 @EnableAutoConfiguration
@@ -38,6 +40,8 @@ import org.springframework.context.annotation.Configuration;
 @EnableBatchProcessing
 public class PdfCleanupApplication {
 
+	private static final Logger log = LoggerFactory.getLogger(PdfCleanupApplication.class);
+	
 	@Autowired
 	private JobBuilderFactory jobs;
 
@@ -66,6 +70,7 @@ public class PdfCleanupApplication {
 	}
 
 	public static void main(String[] args) throws Exception {
+		log.debug("Beginning execution");
 		// System.exit is common for Batch applications since the exit code can be used to
 		// drive a workflow
 		System.exit(SpringApplication.exit(SpringApplication.run(
