@@ -24,6 +24,7 @@ import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.tasklet.Tasklet;
+import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -76,4 +77,10 @@ public class PdfCleanupApplication {
 		System.exit(SpringApplication.exit(SpringApplication.run(
 				PdfCleanupApplication.class, args)));
 	}
+	
+	//@Bean
+	//public ItemReader pdfReader() {
+		
+	//}
+	
 }
